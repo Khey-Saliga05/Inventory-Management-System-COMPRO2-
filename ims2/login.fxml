@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ims2.LoginController">
+    <VBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" spacing="20.0" style="-fx-background-color: #2c2f48;">
+        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="48.0" prefWidth="523.0" text="INVENTORY MANAGEMENT SYSTEM" textAlignment="JUSTIFY" textFill="WHITE">
+            <font>
+                <Font name="Verdana Bold Italic" size="25.0" />
+            </font>
+            <padding>
+                <Insets bottom="10.0" />
+            </padding>
+            <VBox.margin>
+                <Insets />
+            </VBox.margin>
+        </Label>
+        <HBox alignment="CENTER" nodeOrientation="LEFT_TO_RIGHT" prefHeight="20.0" prefWidth="400.0">
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="20.0" prefWidth="100.0" text="Username:" textFill="LIGHTGRAY">
+                <font>
+                    <Font name="Verdana" size="14.0" />
+                </font>
+            </Label>
+            <TextField fx:id="UsernameField" prefHeight="25.0" prefWidth="309.0" promptText="Enter Username" style="-fx-background-radius: 20; -fx-background-color: white;">
+                <font>
+                    <Font name="Verdana" size="14.0" />
+                </font>
+            </TextField>
+        </HBox>
+        <HBox alignment="CENTER" prefHeight="20.0" prefWidth="400.0">
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="20.0" prefWidth="100.0" text="Password:" textFill="LIGHTGRAY">
+                <font>
+                    <Font name="Verdana" size="14.0" />
+                </font>
+            </Label>
+            <StackPane prefHeight="28.0" prefWidth="307.0">
+                <TextField fx:id="passwordTextField" prefHeight="25.0" prefWidth="309.0" style="-fx-background-color: white; -fx-background-radius: 20;">
+                    <font>
+                        <Font name="Verdana" size="14.0" />
+                    </font>
+                </TextField>
+                <PasswordField fx:id="PasswordField" prefHeight="25.0" prefWidth="309.0" promptText="Enter Password" style="-fx-background-radius: 20; -fx-background-color: white;">
+                    <font>
+                        <Font name="Verdana" size="14.0" />
+                    </font>
+                </PasswordField>
+            </StackPane>
+        </HBox>
+        <CheckBox fx:id="toggleShowPassword" alignment="TOP_LEFT" contentDisplay="CENTER" mnemonicParsing="false" onAction="#toggleShowPassword" prefHeight="27.0" prefWidth="200.0" text="Show Password" textAlignment="JUSTIFY" textFill="LIGHTGRAY" textOverrun="CENTER_ELLIPSIS">
+            <font>
+                <Font name="Verdana" size="14.0" />
+            </font>
+        </CheckBox>
+        <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#handleLogin" prefHeight="46.0" prefWidth="152.0" style="-fx-background-radius: 50; -fx-background-color: #16A085;" text="Login" textFill="LIGHTGRAY">
+            <font>
+                <Font name="Verdana Bold" size="15.0" />
+            </font>
+        </Button>
+    </VBox>
+</StackPane>
